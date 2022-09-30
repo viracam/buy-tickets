@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navbar">
+    <!--Header-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/brand_vica-blue.svg" alt="Vica Logo" width="70px">
+          BOG
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-lg-0 d-flex" id="navbar">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#main">Conferencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#speakers">Oradores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#place-time">Lugar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#conviertete-en-orador">Ser Orador</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-ticket" href="#" data-bs-target="#modal-compra" data-bs-toggle="modal">Comprar tickets</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <!--Main-->
+  <section id="main">
+    <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-pause="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/img/photos/hawaii.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/photos/hawaii2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/photos/hawaii3.jpeg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <div class="overlay">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 offset-md-6 text-sm-center text-md-end">
+              <h1>Vica - BOGOTÁ</h1>
+              <p class="d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat corrupti, necessitatibus veniam minus officiis optio! Libero, odit eius deserunt facilis ut rem cupiditate, a cum consequatur iure similique, fugiat eos.</p>
+              <a href="#" class="btn btn-outline-light">Quiero ser orador</a>
+              <button class="btn btn-success" data-bs-target="#modal-compra" data-bs-toggle="modal">Comprar ticketes</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- speakers-->
+  <section id="speakers" class="mt-4 mb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center text-uppercase">
+          <small> Conoce a los </small>
+          <h2>Oradores</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="./assets/img/speakers/sacha.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Camilo Viracacha</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="./assets/img/speakers/freddy.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Camilo Viracacha</h5>
+              <div class="badges">
+                <span class="badge text-bg-primary">JavaScript</span>
+                <span class="badge text-bg-secondary">Veu.js</span>
+              </div>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="./assets/img/speakers/leonidas2.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Camilo Viracacha</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="./assets/img/speakers/cvander.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Camilo Viracacha</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="./assets/img/speakers/sacha.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Camilo Viracacha</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--lugar y fecha-->
+  <section id="place-time">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-lg-6 ps-0 pe-0 ">
+          <img src="./assets/img/photos/honolulu.jpg" alt="">
+        </div>
+        <div class="col pb-2 pt-4">
+          <h2>
+            Bogotá - Octubre 2023
+          </h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus officia molestias veniam quaerat, perspiciatis minima expedita maxime odit pariatur repudiandae, doloribus et quisquam totam unde repellendus. Mollitia alias nisi repellendus?</p>
+          <a href="#" class="btn btn-outline-light">Conoce más</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Orador-->
+  <section id="conviertete-en-orador" class="pt-3 pb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <small class="text-uppercase">
+            Conviertete en un
+          </small>
+          <h2>Orador</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center">
+          Anotate como <abbr data-toggle="tooltip" class="etooltip" title="Charlas de 5 min">orador</abbr>
+          Cuéntanos de que quieres hablar!
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-md-8 offset-md-2">
+          <form action="" class="row" id="form-orador">
+            <div class="form-group col-12 col-md-6">
+              <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+            </div>
+            <div class="form-group col">
+              <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+            </div>
+            <div class="form-row">
+              <div class="col">
+                <textarea class="form-group form-control form-control-lg" placeholder="De qué quieres hablar" name="text" id="" cols="30" rows="10"></textarea>
+                <small class="form-text text-muted">
+                  Recueda incluir un título para tu charla
+                </small>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col">
+                <button class="btn btn-success btn-flex">Enviar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Footer-->
+    <footer id="footer" class="pb-4 pt-4">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12 col-lg">
+            <a>Preguntas frecuentes</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a>Contáctenos</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a>Prensa</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a>Conferencias</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a>Términos y condiciones</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a>Privacidad</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a>Estudiantes</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Modal-->
+    <!-- Vertically centered modal -->
+    <div class="modal fade" id="modal-compra" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Comprar tickets</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="form-row">
+                <div class="form-group col">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                  
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <span class="input-group-text" id="basic-addon2">@example.com</span>
+                  </div>
+                </div>
+
+              </div>
+            </form>
+            <div class="alert alert-warning" role="alert">
+              Recibiras un correo de confirmación si sales sorteado
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+#footer{
+    background: rgb(73,81,221);
+    background: linear-gradient(180deg, rgba(73,81,221,1) 100%, rgba(45,120,221,0) 100%, rgba(4,10,84,0.6085784655659139) 100%);
+}
+#footer a{
+    color: white;
+}
+#carousel{
+    position: relative;
+}
+#carousel .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(4,10,84,0.6085784655659139);
+    z-index: 4;
+    color: white;
+}
+#carousel .overlay .container,
+#carousel .overlay .row {
+    height: 100%;
+}
+#place-time{
+    background: rgb(73,81,221);
+    background: linear-gradient(180deg, rgba(73,81,221,1) 100%, rgba(45,120,221,0) 100%, rgba(4,10,84,0.6085784655659139) 100%);
+    color: white;
+}
+#place-time img{
+    max-width: 100%;
+}
+#form-orador{
+    gap:15px;
+}
+#main .carousel-inner img{
+    max-height: 70vh;
+    object-fit: cover;
+    filter: grayscale(.7);
+}
+.text-ticket{
+    border: 1px solid blue;
+    color: blue;
+    margin: 0 5px;
+    text-align: center;
+}
